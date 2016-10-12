@@ -1,0 +1,2 @@
+json.extract! load_order, :id, :deliveryDate, :deliveryShift, :originName, :origin_address_id, :clientName, :destination_address_id, :phoneNumber, :mode, :purchaseOrderNumber, :created_at, :updated_at
+json.url load_order_url(load_order, format: :json)

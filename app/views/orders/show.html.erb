@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Deliverydate:</b>
+  <%= @order.deliveryDate %>
+</p>
+
+<p>
+  <b>Deliveryshift:</b>
+  <%= @order.deliveryShift %>
+</p>
+
+<p>
+  <b>Originname:</b>
+  <%= @order.originName %>
+</p>
+
+<p>
+  <b>Originaddress:</b>
+  <%= @order.origin_address_id %>
+</p>
+
+<p>
+  <b>Clientname:</b>
+  <%= @order.clientName %>
+</p>
+
+<p>
+  <b>Destinationaddress:</b>
+  <%= @order.destination_address_id %>
+</p>
+
+<p>
+  <b>Phonenumber:</b>
+  <%= @order.phoneNumber %>
+</p>
+
+<p>
+  <b>Mode:</b>
+  <%= @order.mode %>
+</p>
+
+<p>
+  <b>Purchaseordernumber:</b>
+  <%= @order.purchaseOrderNumber %>
+</p>
+
+
+<%= link_to 'Edit', edit_load_order_path(@order.load, @order) %> |
+<%= link_to 'Back', load_orders_path(@order.load) %>

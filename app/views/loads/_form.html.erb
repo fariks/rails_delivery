@@ -1,0 +1,32 @@
+<%= form_for(load) do |f| %>
+  <% if load.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(load.errors.count, "error") %> prohibited this load from being saved:</h2>
+
+      <ul>
+      <% load.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :deliveryDate %>
+    <%= f.date_select :deliveryDate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :deliveryShift %>
+    <%= f.text_field :deliveryShift %>
+  </div>
+
+  <div class="field">
+    <%= f.label :driver_id %>
+    <%= f.text_field :driver_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

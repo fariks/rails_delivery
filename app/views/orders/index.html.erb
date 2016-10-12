@@ -1,0 +1,40 @@
+<h1>Listing orders</h1>
+
+<table>
+  <tr>
+    <th>Deliverydate</th>
+    <th>Deliveryshift</th>
+    <th>Originname</th>
+    <th>Originaddress</th>
+    <th>Clientname</th>
+    <th>Destinationaddress</th>
+    <th>Phonenumber</th>
+    <th>Mode</th>
+    <th>Purchaseordernumber</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @orders.each do |order| %>
+  <tr>
+    <td><%= order.deliveryDate %></td>
+    <td><%= order.deliveryShift %></td>
+    <td><%= order.originName %></td>
+    <td><%= order.origin_address_id %></td>
+    <td><%= order.clientName %></td>
+    <td><%= order.destination_address_id %></td>
+    <td><%= order.phoneNumber %></td>
+    <td><%= order.mode %></td>
+    <td><%= order.purchaseOrderNumber %></td>
+    <td><%= link_to 'Show', [order.load, order] %></td>
+    <td><%= link_to 'Edit', edit_load_order_path(order.load, order) %></td>
+    <td><%= link_to 'Destroy', [order.load, order], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Order', new_load_order_path(params[:load_id]) %>
+

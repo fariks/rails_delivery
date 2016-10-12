@@ -1,0 +1,1 @@
+json.partial! "load_orders/load_order", load_order: @load_order

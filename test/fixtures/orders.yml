@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  load: one
+  deliveryDate: 2016-10-12
+  deliveryShift: MyString
+  originName: MyString
+  originAddress: one
+  clientName: MyString
+  destinationAddress: one
+  phoneNumber: MyString
+  mode: MyString
+  purchaseOrderNumber: 1
+
+two:
+  load: two
+  deliveryDate: 2016-10-12
+  deliveryShift: MyString
+  originName: MyString
+  originAddress: two
+  clientName: MyString
+  destinationAddress: two
+  phoneNumber: MyString
+  mode: MyString
+  purchaseOrderNumber: 1
